@@ -1,0 +1,5 @@
+audit/
+rip/
+*.ttf
+node_modules/
+.DS_Store
