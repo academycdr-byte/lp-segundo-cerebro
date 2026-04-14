@@ -96,16 +96,16 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   gap: 16px;
-  border-bottom: 1px solid rgba(255, 77, 0, 0.3);
+  border-bottom: 1px solid rgba(168, 214, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .countdown-label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.68px;
   text-transform: uppercase;
   color: var(--accent);
 }
@@ -124,9 +124,10 @@ ul { list-style: none; }
 
 .countdown-number {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 700;
   color: var(--white);
-  min-width: 36px;
+  min-width: 40px;
   text-align: center;
 }
 
@@ -138,7 +139,7 @@ ul { list-style: none; }
 
 .countdown-sep {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 28px;
   color: var(--text-muted);
   margin: 0 2px;
 }
@@ -148,7 +149,7 @@ ul { list-style: none; }
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.68px;
   text-transform: uppercase;
   color: var(--accent);
   background: var(--accent-tint);
@@ -161,9 +162,9 @@ ul { list-style: none; }
 /* --- Label --- */
 .label {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.68px;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 12px;
@@ -177,30 +178,30 @@ ul { list-style: none; }
 /* --- Headings --- */
 h1 {
   font-family: var(--font-display);
-  font-size: clamp(40px, 7vw, 72px);
+  font-size: clamp(36px, 5.5vw, 60.8px);
   font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -1px;
+  line-height: 0.92;
+  letter-spacing: -2.4px;
   text-transform: uppercase;
   color: var(--white);
 }
 
 h2 {
   font-family: var(--font-display);
-  font-size: clamp(36px, 5.5vw, 60px);
+  font-size: clamp(32px, 5vw, 56px);
   font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -0.5px;
+  line-height: 0.92;
+  letter-spacing: -2.24px;
   text-transform: uppercase;
   color: var(--white);
 }
 
 h3 {
   font-family: var(--font-display);
-  font-size: clamp(24px, 3vw, 32px);
-  font-weight: 600;
+  font-size: clamp(22px, 2.8vw, 30px);
+  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: 0px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 8px;
@@ -214,13 +215,13 @@ h3 {
 .btn-cta {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
   text-transform: uppercase;
   color: var(--bg-deep);
   background: var(--accent);
-  padding: 18px 48px;
+  padding: 16px 40px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -251,7 +252,8 @@ h3 {
 }
 
 .hero-sub {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--text-secondary);
   margin: 24px 0 32px;
   max-width: 640px;
@@ -293,8 +295,9 @@ h3 {
 
 .marquee-track span {
   font-family: var(--font-display);
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--bg-deep);
   padding-right: 0;
@@ -379,9 +382,9 @@ h3 {
 
 .label-dark {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.68px;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 20px;
@@ -457,10 +460,11 @@ h3 {
 
 .problem-question {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3.5vw, 40px);
-  line-height: 1;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 0.95;
   color: var(--text-dark) !important;
-  letter-spacing: 0.5px;
+  letter-spacing: -1px;
 }
 
 .problem-text p {
@@ -803,8 +807,8 @@ h3 {
 
   /* Countdown */
   .countdown-bar { gap: 10px; padding: 8px 12px; }
-  .countdown-label { font-size: 9px; letter-spacing: 1.5px; }
-  .countdown-number { font-size: 22px; min-width: 28px; }
+  .countdown-label { font-size: 10px; letter-spacing: 1.5px; }
+  .countdown-number { font-size: 26px; min-width: 32px; }
 
   /* Stats */
   .stats-grid {
@@ -814,7 +818,7 @@ h3 {
 
   .stats-chart { height: 240px; gap: 20px; }
   .bar-value { font-size: 28px; }
-  .bar-label { font-size: 10px; }
+  .bar-label { font-size: 9px; }
 
   /* Problem */
   .problem-grid {
@@ -843,14 +847,14 @@ h3 {
 
   /* CTA */
   .btn-cta {
-    font-size: 16px;
-    padding: 16px 36px;
-    letter-spacing: 1.5px;
+    font-size: 18px;
+    padding: 14px 32px;
+    letter-spacing: 2px;
   }
 
   .btn-cta-large {
-    font-size: 18px;
-    padding: 18px 40px;
+    font-size: 20px;
+    padding: 16px 36px;
   }
 
   /* Footer */
@@ -870,8 +874,8 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 36px; }
-  h2 { font-size: 32px; }
+  h1 { font-size: 32px; letter-spacing: -1.5px; }
+  h2 { font-size: 28px; letter-spacing: -1.5px; }
 
   .badge { font-size: 11px; padding: 6px 16px; }
   .label { font-size: 11px; }
