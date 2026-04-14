@@ -1,26 +1,27 @@
 /* ============================================
    SEGUNDO CEREBRO COM IA - Landing Page
-   Design system: Cabeca de Dono reference
+   Design system: CDR Group (cdrgroup.com.br)
    ============================================ */
 
 /* --- Variables --- */
 :root {
-  --orange: #FF4D00;
-  --orange-hover: #FF5A1A;
+  --accent: #A8D600;
+  --accent-light: #C2F000;
+  --accent-dark: #5A7A00;
   --white: #FFFFFF;
   --cream: #F1F3E5;
   --bg-dark: #0A0A0A;
-  --bg-mid: #111111;
+  --bg-mid: #0E1A00;
   --bg-deep: #000000;
   --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-secondary: rgba(255, 255, 255, 0.85);
   --text-muted: rgba(255, 255, 255, 0.5);
-  --text-dark: #0D0D0D;
+  --text-dark: #000000;
   --text-dark-secondary: rgba(0, 0, 0, 0.7);
-  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
-  --orange-tint: rgba(255, 77, 0, 0.1);
-  --orange-border: rgba(255, 77, 0, 0.3);
+  --accent-tint: rgba(168, 214, 0, 0.08);
+  --accent-border: rgba(168, 214, 0, 0.3);
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 }
@@ -81,7 +82,7 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .countdown-timer {
@@ -124,9 +125,9 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--orange);
-  background: var(--orange-tint);
-  border: 1px solid var(--orange-border);
+  color: var(--accent);
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
   padding: 8px 20px;
   border-radius: 100px;
   margin-bottom: 24px;
@@ -139,7 +140,7 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--accent);
   margin-bottom: 12px;
 }
 
@@ -181,7 +182,7 @@ h3 {
 }
 
 .accent {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 /* --- CTA Button --- */
@@ -192,10 +193,10 @@ h3 {
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--white);
-  background: var(--orange);
+  color: var(--bg-deep);
+  background: var(--accent);
   padding: 18px 48px;
-  border-radius: 9999px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -217,7 +218,7 @@ h3 {
   display: flex;
   align-items: center;
   padding: 80px 0 60px;
-  background: radial-gradient(ellipse at top center, rgba(255, 77, 0, 0.08) 0%, transparent 60%), var(--bg-dark);
+  background: radial-gradient(ellipse at top center, rgba(168, 214, 0, 0.08) 0%, transparent 60%), var(--bg-dark);
 }
 
 .hero-content {
@@ -250,7 +251,7 @@ h3 {
 
 /* --- Marquee Strip --- */
 .marquee-strip {
-  background: var(--orange);
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
   padding: 12px 0;
   overflow: hidden;
   white-space: nowrap;
@@ -270,7 +271,7 @@ h3 {
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--bg-deep);
   padding-right: 0;
   flex-shrink: 0;
 }
@@ -306,11 +307,11 @@ h3 {
 }
 
 .section-cream .label {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .section-cream .accent {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 /* --- Problem Section --- */
@@ -323,8 +324,8 @@ h3 {
 }
 
 .problem-card {
-  background: rgba(255, 77, 0, 0.08);
-  border: 1px solid rgba(255, 77, 0, 0.2);
+  background: rgba(168, 214, 0, 0.08);
+  border: 1px solid rgba(168, 214, 0, 0.2);
   border-radius: 16px;
   padding: 40px;
   display: flex;
@@ -365,7 +366,7 @@ h3 {
 }
 
 .solution-content .highlight {
-  color: var(--orange);
+  color: var(--accent);
   font-weight: 700;
   font-size: 20px;
 }
@@ -387,14 +388,14 @@ h3 {
 }
 
 .secret-card:hover {
-  border-color: var(--orange-border);
-  background: var(--orange-tint);
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
 }
 
 .secret-number {
   font-family: var(--font-display);
   font-size: 48px;
-  color: var(--orange);
+  color: var(--accent);
   line-height: 1;
   display: block;
   margin-bottom: 16px;
@@ -425,7 +426,7 @@ h3 {
 }
 
 .benefit-item:hover {
-  border-color: var(--orange-border);
+  border-color: var(--accent-border);
 }
 
 .benefit-icon {
@@ -436,7 +437,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--orange-tint);
+  background: var(--accent-tint);
   border-radius: 12px;
 }
 
@@ -484,13 +485,13 @@ h3 {
 }
 
 .audience-yes {
-  background: rgba(255, 77, 0, 0.08);
-  border: 1px solid rgba(255, 77, 0, 0.25);
+  background: rgba(168, 214, 0, 0.08);
+  border: 1px solid rgba(168, 214, 0, 0.25);
 }
 
-.audience-yes h3 { color: var(--orange); }
+.audience-yes h3 { color: var(--accent); }
 .audience-yes li { color: var(--text-dark); }
-.audience-yes li::before { content: "&#10003;"; color: var(--orange); }
+.audience-yes li::before { content: "&#10003;"; color: var(--accent); }
 
 .audience-no {
   background: rgba(0, 0, 0, 0.04);
@@ -533,13 +534,13 @@ h3 {
 }
 
 .faq-question:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .faq-icon {
   font-size: 24px;
   font-weight: 300;
-  color: var(--orange);
+  color: var(--accent);
   transition: transform 0.3s ease;
   flex-shrink: 0;
   margin-left: 16px;
@@ -570,7 +571,7 @@ h3 {
 .section-cta-final {
   padding: 100px 0;
   text-align: center;
-  background: radial-gradient(ellipse at center, rgba(255, 77, 0, 0.1) 0%, transparent 60%), var(--bg-deep);
+  background: radial-gradient(ellipse at center, rgba(168, 214, 0, 0.1) 0%, transparent 60%), var(--bg-deep);
 }
 
 .section-cta-final .container {
@@ -621,7 +622,7 @@ h3 {
 }
 
 .footer-links a:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 /* --- Animations (GSAP prepares) --- */
