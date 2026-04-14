@@ -23,7 +23,8 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/ClashDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
 
   <!-- GA4 placeholder -->
   <!--
@@ -128,6 +129,43 @@
       </div>
     </section>
 
+    <!-- Stats -->
+    <section class="section-dark" aria-label="Estatisticas">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stats-chart">
+            <div class="bar-group">
+              <div class="bar-wrapper">
+                <span class="bar-value">72%</span>
+                <div class="bar" style="height: 72%"></div>
+              </div>
+              <span class="bar-label">DOS DONOS TEM<br>PROCESSOS SO<br>NA CABECA</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-wrapper">
+                <span class="bar-value">85%</span>
+                <div class="bar" style="height: 85%"></div>
+              </div>
+              <span class="bar-label">DO TEMPO GASTO<br>EM TAREFAS<br>REPETITIVAS</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-wrapper">
+                <span class="bar-value accent">3x</span>
+                <div class="bar bar-accent" style="height: 95%"></div>
+              </div>
+              <span class="bar-label">MAIS RAPIDO COM<br>UM SEGUNDO<br>CEREBRO</span>
+            </div>
+          </div>
+          <div class="stats-text">
+            <span class="label-dark">POR QUE VOCE PRECISA DISSO</span>
+            <p>A maioria dos empreendedores <strong>carrega o negocio inteiro na cabeca.</strong> Cada processo, cada decisao, cada resposta depende de voce.</p>
+            <p>Com um Segundo Cerebro, voce <strong>documenta tudo uma vez</strong> e a IA executa quantas vezes precisar. Sua equipe consulta sem te interromper. Voce escala sem se prender.</p>
+            <p class="stats-highlight">O conhecimento sai da sua cabeca e vira um ativo do negocio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Solution -->
     <section class="section-dark" aria-label="Solucao">
       <div class="container">
@@ -188,35 +226,35 @@
         </div>
         <div class="benefits-grid">
           <div class="benefit-item">
-            <span class="benefit-icon">&#9889;</span>
+            <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></span>
             <div>
               <strong>Vault template completo</strong>
               <p>Obsidian + Claude Code configurados e prontos pra usar</p>
             </div>
           </div>
           <div class="benefit-item">
-            <span class="benefit-icon">&#9881;</span>
+            <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
             <div>
               <strong>3 skills funcionando</strong>
               <p>Ingerir conteudo, criar processos e pesquisar assuntos - tudo automatizado</p>
             </div>
           </div>
           <div class="benefit-item">
-            <span class="benefit-icon">&#128214;</span>
+            <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg></span>
             <div>
               <strong>Guia completo de uso</strong>
               <p>Passo a passo de como usar o Segundo Cerebro no seu negocio</p>
             </div>
           </div>
           <div class="benefit-item">
-            <span class="benefit-icon">&#129504;</span>
+            <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-3.5 7.5L12 21l-3.5-4.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
             <div>
               <strong>Sistema de memoria</strong>
               <p>A IA aprende suas preferencias e nunca esquece</p>
             </div>
           </div>
           <div class="benefit-item">
-            <span class="benefit-icon">&#128187;</span>
+            <span class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
             <div>
               <strong>Instalacao guiada ao vivo</strong>
               <p>Eu instalo junto com voce, em tempo real, na live</p>

@@ -3,6 +3,31 @@
    Design system: CDR Group (cdrgroup.com.br)
    ============================================ */
 
+/* --- Clash Display (local WOFF2) --- */
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/fonts/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* --- Variables --- */
 :root {
   --accent: #A8D600;
@@ -22,7 +47,7 @@
   --card-border: rgba(255, 255, 255, 0.08);
   --accent-tint: rgba(168, 214, 0, 0.08);
   --accent-border: rgba(168, 214, 0, 0.3);
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Clash Display', 'Bebas Neue', sans-serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 }
 
@@ -153,9 +178,9 @@ ul { list-style: none; }
 h1 {
   font-family: var(--font-display);
   font-size: clamp(40px, 7vw, 72px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 0.95;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -163,9 +188,9 @@ h1 {
 h2 {
   font-family: var(--font-display);
   font-size: clamp(36px, 5.5vw, 60px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 0.95;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -173,9 +198,9 @@ h2 {
 h3 {
   font-family: var(--font-display);
   font-size: clamp(24px, 3vw, 32px);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.05;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 8px;
@@ -279,6 +304,104 @@ h3 {
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+/* --- Stats Section --- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.stats-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  height: 320px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.bar-wrapper {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar-value {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.bar-value.accent {
+  color: var(--accent);
+}
+
+.bar {
+  width: 100%;
+  max-width: 80px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 6px 6px 0 0;
+  transition: height 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bar-accent {
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+}
+
+.bar-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.stats-text {
+  max-width: 500px;
+}
+
+.label-dark {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.stats-text p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.stats-text strong {
+  color: var(--white);
+}
+
+.stats-highlight {
+  color: var(--accent) !important;
+  font-weight: 700;
+  font-size: 19px !important;
 }
 
 /* --- Sections --- */
@@ -430,7 +553,6 @@ h3 {
 }
 
 .benefit-icon {
-  font-size: 28px;
   flex-shrink: 0;
   width: 48px;
   height: 48px;
@@ -439,6 +561,12 @@ h3 {
   justify-content: center;
   background: var(--accent-tint);
   border-radius: 12px;
+  color: var(--accent);
+}
+
+.benefit-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .benefit-item strong {
@@ -677,6 +805,16 @@ h3 {
   .countdown-bar { gap: 10px; padding: 8px 12px; }
   .countdown-label { font-size: 9px; letter-spacing: 1.5px; }
   .countdown-number { font-size: 22px; min-width: 28px; }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-chart { height: 240px; gap: 20px; }
+  .bar-value { font-size: 28px; }
+  .bar-label { font-size: 10px; }
 
   /* Problem */
   .problem-grid {
