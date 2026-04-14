@@ -491,7 +491,7 @@ h3 {
 
 .audience-yes h3 { color: var(--accent); }
 .audience-yes li { color: var(--text-dark); }
-.audience-yes li::before { content: "&#10003;"; color: var(--accent); }
+.audience-yes li::before { content: "\2713"; color: var(--accent); }
 
 .audience-no {
   background: rgba(0, 0, 0, 0.04);
@@ -500,7 +500,7 @@ h3 {
 
 .audience-no h3 { color: var(--text-dark); }
 .audience-no li { color: var(--text-dark-secondary); }
-.audience-no li::before { content: "&#10005;"; color: rgba(0, 0, 0, 0.3); }
+.audience-no li::before { content: "\2715"; color: rgba(0, 0, 0, 0.3); }
 
 /* --- FAQ --- */
 .faq-title {
